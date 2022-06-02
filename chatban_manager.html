@@ -21,10 +21,10 @@
 	<meta name="msapplication-TileColor" content="#da532c">
 	<link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
 	<link rel="stylesheet" href="css/theme.bootstrap_4.min.css">
-	<title>Twitch - Follower remover</title>
-	<meta name="title" content="Twitch - Follower remover">
-	<meta property="og:title" content="Twitch - Follower remover">
-	<meta property="og:description" content="Manage your Twitch follower list, for example to remove follow bots">
+	<title>Twitch - Chat ban manager</title>
+	<meta name="title" content="Twitch - Chat ban manager">
+	<meta property="og:title" content="Twitch - Chat ban manager">
+	<meta property="og:description" content="Manage your Twitch chat bans">
 	<link rel="dns-prefetch" href="https://id.twitch.tv">
 	<link rel="preconnect" href="https://id.twitch.tv">
 	<link rel="dns-prefetch" href="https://api.twitch.tv">
@@ -39,7 +39,7 @@
 	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		<ul class="navbar-nav">
 			<li class="nav-item">
-				<a class="nav-link active" href="follower_remover.html">Follower remover</a>
+				<a class="nav-link" href="follower_remover.html">Follower remover</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="followerlist_viewer.html">Follower list viewer</a>
@@ -48,7 +48,7 @@
 				<a class="nav-link" href="followinglist_viewer.html">Following list viewer</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="chatban_manager.html">Chat ban manager</a>
+				<a class="nav-link active" href="chatban_manager.html">Chat ban manager</a>
 			</li>
 			<li class="nav-item">
 				<a class="nav-link" href="blocked_terms_manager.html">Blocked terms manager</a>
@@ -61,17 +61,15 @@
 </nav>
 <div class="container-fluid small">
 <ul class="list-unstyled pt-3" id="info-list">
-<li>This tool lets you remove followers from your Twitch account.</li>
-<li>You can filter followers by follow date, account creation date, time between account creation and follow and username.</li>
-<li>It is very powerful and can, if wanted, clear your follower list completely.</li>
-<li>There is no way to restore a follow, even for Twitch. Only the user itself can re-follow (if you didn&#039;t also block).</li>
-<li>No idea how to use it? Check <a href="https://www.youtube.com/watch?v=FCYmks3aTeI" target="_blank" rel="noopener">this video guide</a>.</li>
-<li>If you want to preemptively block known follow bots you can use the <a href="blocklist_manager.html">blocklist manager</a>.</li>
+<li>This tool lets you manage your chat bans on your Twitch account.</li>
+<li>You can filter by username, by the user who did the ban, the ban reason and the ban duration.</li>
+<li>It is very powerful and can, if wanted, clear your chat ban list completely.</li>
+<li>You can also mass add new chat bans from a list.</li>
 <li>Got any questions? Feel free to ask me on Twitter <a href="https://twitter.com/CommanderRoot/" target="_blank" rel="noopener">@CommanderRoot</a> or open a Github <a href="https://github.com/CommanderRoot/twitch-tools/issues" target="_blank" rel="noopener">issue</a></li>
 </ul>
 <br>
 <div id="status"></div>
-<div id="content">Loading ...</div>
+<div id="content"></div>
 <audio id="bg_audio" loop="true" preload="auto">
 	<source src="img/bg_sound.mp3" type="audio/mpeg">
 </audio>
@@ -79,11 +77,9 @@
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/general.js"></script>
-<script type="text/javascript" src="js/jquery.datetimepicker.full.min.js"></script>
-<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
 <script type="text/javascript" src="js/moment.min.js"></script>
 <script type="text/javascript" src="js/moment-timezone-with-data.min.js"></script>
 <script type="text/javascript" src="js/bootbox.min.js"></script>
-<script type="text/javascript" src="js/follower_remover.js"></script>
+<script type="text/javascript" src="js/chatban_manager.js"></script>
 </body>
 </html>
