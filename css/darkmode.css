@@ -1,0 +1,96 @@
+body {
+	color: #bebebe;
+	background-color: #222;
+}
+a {
+	color: #dad8de;
+}
+a:hover {
+	color: #ffffff;
+}
+.navbar-light .navbar-brand {
+	color: #dad8de;
+}
+.navbar-light:hover .navbar-brand:hover {
+	color: #dad8de;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: rgba(255, 255, 255, 0.6);
+}
+.navbar-light:hover .navbar-nav:hover .nav-link:hover {
+	color: #ffffff;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+	color: rgba(255, 255, 255, 0.9);
+}
+.navbar-toggler {
+	background-color: #b1b1b1;
+}
+.table {
+	color: #dad8de;
+}
+.table-hover tbody tr:hover {
+	color: #b7b8b9;
+}
+.table .thead-light th {
+	color: #000000;
+	background-color: #b1b1b1;
+}
+.search-icon {
+	background-color: #ffffff;
+}
+.page-link {
+	color: #0057b4;
+	background-color: #dad8de;
+}
+.card-header {
+	color: #000000;
+	background-color: rgb(158, 158, 158);
+}
+.card-body {
+	color: #000000;
+	background-color: rgb(123, 123, 123);
+}
+.card {
+	color: #bebebe;
+	background-color: #181818;
+	border-color: #404040;
+}
+.known-bot {
+	background-color: #7e320d;
+}
+.disabled-account {
+	background-color: #7e0000;
+}
+.dropdown-menu.show {
+	background-color: #b1b1b1;
+}
+label.checkbox {
+	color: #000000;
+}
+label.checkbox:hover {
+	color: #eaeaea;
+}
+.form-control {
+	color: #000000;
+	background-color: #b1b1b1;
+}
+.form-control:focus {
+	color: #000000;
+}
+.custom-select  {
+	color: #000000;
+	background-color: #b1b1b1;
+}
+.card-title>a {
+	color: #979cff;
+}
+.darkmode-select {
+	background-color: #e3e3e3;
+}
+.bootbox-body {
+	color: #000000;
+}
+#abort-loading-button {
+	color: #bd2130;
+}

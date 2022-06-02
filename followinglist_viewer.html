@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<meta name="referrer" content="strict-origin-when-cross-origin">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Twitch tools by @CommanderRoot">
+	<meta name="twitter:site" content="@commanderroot">
+	<meta name="twitter:card" content="summary">
+	<meta property="og:image" content="/img/logo.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<link rel="stylesheet" href="css/jquery.datetimepicker.min.css">
+	<link rel="stylesheet" href="css/theme.bootstrap_4.min.css">
+	<title>Twitch - Following list viewer</title>
+	<meta name="title" content="Twitch - Following list viewer">
+	<meta property="og:title" content="Twitch - Following list viewer">
+	<meta property="og:description" content="View which channels any user follows on Twitch">
+	<link rel="dns-prefetch" href="https://id.twitch.tv">
+	<link rel="preconnect" href="https://id.twitch.tv">
+	<link rel="dns-prefetch" href="https://api.twitch.tv">
+	<link rel="preconnect" href="https://api.twitch.tv">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-faded small">
+	<h1 class="navbar-brand mb-0"><a href="/">Twitch Tools</a> by <a href="https://twitter.com/CommanderRoot" target="_blank" rel="noopener">@CommanderRoot</a></h1>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<ul class="navbar-nav">
+			<li class="nav-item">
+				<a class="nav-link" href="follower_remover.html">Follower remover</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="followerlist_viewer.html">Follower list viewer</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link active" href="followinglist_viewer.html">Following list viewer</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+	<div class="container-fluid small">
+<ul class="list-unstyled pt-3">
+<li>This tool lets you view which channels a user follows on Twitch.</li>
+<li>You can filter follows by follow date, account creation date, time between account creation and follow and username.</li>
+<li>Got any questions? Feel free to ask me on Twitter <a href="https://twitter.com/CommanderRoot/" target="_blank" rel="noopener">@CommanderRoot</a> or open a Github <a href="https://github.com/CommanderRoot/twitch-tools/issues" target="_blank" rel="noopener">issue</a></li>
+</ul>
+<br>
+<div id="status"></div>
+<div id="content">Loading ...</div>
+<audio id="bg_audio" loop="true" preload="auto">
+	<source src="img/bg_sound.mp3" type="audio/mpeg">
+</audio>
+</div>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/general.js"></script>
+<script type="text/javascript" src="js/jquery.datetimepicker.full.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/moment-timezone-with-data.min.js"></script>
+<script type="text/javascript" src="js/followerlist_viewer.js"></script>
+</body>
+</html>
